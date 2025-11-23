@@ -1,0 +1,32 @@
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\bin\Debug\net8.0-windows\While.exe
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\bin\Debug\net8.0-windows\While.deps.json
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\bin\Debug\net8.0-windows\While.runtimeconfig.json
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\bin\Debug\net8.0-windows\While.dll
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\bin\Debug\net8.0-windows\While.pdb
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.Form1.resources
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.vbproj.GenerateResource.cache
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.AssemblyInfoInputs.cache
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.AssemblyInfo.vb
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.vbproj.CoreCompileInputs.cache
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.dll
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\refint\While.dll
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.pdb
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\While.genruntimeconfig.cache
+C:\Users\arath\OneDrive\Documentos\1. Tec\3er semestre\Programación\Visual Basic\While\While\obj\Debug\net8.0-windows\ref\While.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\bin\Debug\net8.0-windows\While.exe
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\bin\Debug\net8.0-windows\While.deps.json
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\bin\Debug\net8.0-windows\While.runtimeconfig.json
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\bin\Debug\net8.0-windows\While.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\bin\Debug\net8.0-windows\While.pdb
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.Form1.resources
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.vbproj.GenerateResource.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.AssemblyInfoInputs.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.AssemblyInfo.vb
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.vbproj.CoreCompileInputs.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\refint\While.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.pdb
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\While.genruntimeconfig.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\While\While\While\obj\Debug\net8.0-windows\ref\While.dll

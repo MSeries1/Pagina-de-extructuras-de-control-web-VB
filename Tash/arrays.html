@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Interactivo sobre Arreglos</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #6f42c1;
+            --accent-light: #8e6bd1;
+            --accent-dark: #5a3796;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: white;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4 {
+            color: var(--accent-color);
+        }
+        
+        .navbar {
+            background-color: var(--accent-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--accent-dark);
+            border-color: var(--accent-dark);
+        }
+        
+        .card-header {
+            background-color: var(--accent-light);
+            color: white;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        
+        .example-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        
+        .result-box {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        
+        .step-explanation {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
+        .nav-link.active {
+            background-color: var(--accent-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tutorial de Arreglos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unidimensional">Unidimensionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bidimensional">Bidimensionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#multidimensional">Multidimensionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explicaciones">Explicaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Introducción -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 mb-4">Tutorial Interactivo sobre Arreglos</h1>
+                <p class="lead">Aprende sobre arreglos unidimensionales, bidimensionales y multidimensionales con ejemplos prácticos y ejecutables.</p>
+            </div>
+        </div>
+
+        <!-- Arreglos Unidimensionales -->
+        <div id="unidimensional" class="example-section">
+            <h2 class="mb-4">Arreglos Unidimensionales</h2>
+            <p>Un arreglo unidimensional es una colección de elementos del mismo tipo almacenados en una sola dimensión.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 1: Creación y Acceso</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Crear un arreglo de números
+let numeros = [10, 20, 30, 40, 50];
+
+// Acceder a elementos por índice
+console.log(numeros[0]); // 10
+console.log(numeros[2]); // 30
+
+// Modificar un elemento
+numeros[1] = 25;
+console.log(numeros); // [10, 25, 30, 40, 50]
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo1()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado1"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 2: Métodos Comunes</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Métodos de arreglos unidimensionales
+let frutas = ['manzana', 'banana', 'naranja'];
+
+// Agregar elemento al final
+frutas.push('uva');
+console.log(frutas);
+
+// Eliminar último elemento
+frutas.pop();
+console.log(frutas);
+
+// Obtener longitud del arreglo
+console.log(frutas.length); // 3
+
+// Recorrer arreglo
+for (let i = 0; i < frutas.length; i++) {
+    console.log(frutas[i]);
+}
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo2()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Práctica: Crear tu propio arreglo</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="arregloInput" class="form-label">Ingresa elementos separados por coma:</label>
+                        <input type="text" class="form-control" id="arregloInput" value="1,2,3,4,5">
+                    </div>
+                    <button class="btn btn-primary" onclick="crearArregloPersonalizado()">Crear Arreglo</button>
+                    <div class="result-box mt-3" id="resultadoPersonalizado"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arreglos Bidimensionales -->
+        <div id="bidimensional" class="example-section">
+            <h2 class="mb-4">Arreglos Bidimensionales</h2>
+            <p>Un arreglo bidimensional es una estructura de datos que organiza elementos en filas y columnas, formando una tabla.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 1: Creación y Acceso</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Crear un arreglo bidimensional (matriz)
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// Acceder a elementos
+console.log(matriz[0][0]); // 1 (fila 0, columna 0)
+console.log(matriz[1][2]); // 6 (fila 1, columna 2)
+
+// Modificar un elemento
+matriz[2][1] = 10;
+console.log(matriz[2]); // [7, 10, 9]
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo3()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado3"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 2: Recorrido de Matriz</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Recorrer una matriz bidimensional
+let tabla = [
+    ['A', 'B', 'C'],
+    ['D', 'E', 'F'],
+    ['G', 'H', 'I']
+];
+
+// Recorrer filas y columnas
+for (let fila = 0; fila < tabla.length; fila++) {
+    for (let col = 0; col < tabla[fila].length; col++) {
+        console.log(`Elemento en [${fila}][${col}]: ${tabla[fila][col]}`);
+    }
+}
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo4()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Práctica: Crear tu propia matriz</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="filasInput" class="form-label">Número de filas:</label>
+                            <input type="number" class="form-control" id="filasInput" value="3" min="1" max="10">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="columnasInput" class="form-label">Número de columnas:</label>
+                            <input type="number" class="form-control" id="columnasInput" value="3" min="1" max="10">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="crearMatrizPersonalizada()">Crear Matriz</button>
+                    <div class="result-box mt-3" id="resultadoMatrizPersonalizada"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arreglos Multidimensionales -->
+        <div id="multidimensional" class="example-section">
+            <h2 class="mb-4">Arreglos Multidimensionales</h2>
+            <p>Los arreglos multidimensionales son estructuras con más de dos dimensiones, útiles para representar datos complejos.</p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 1: Arreglo Tridimensional</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Crear un arreglo tridimensional
+let cubo = [
+    [
+        [1, 2],
+        [3, 4]
+    ],
+    [
+        [5, 6],
+        [7, 8]
+    ]
+];
+
+// Acceder a elementos
+console.log(cubo[0][0][0]); // 1
+console.log(cubo[1][1][1]); // 8
+
+// Modificar un elemento
+cubo[0][1][0] = 9;
+console.log(cubo[0][1]); // [9, 4]
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo5()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado5"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Ejemplo 2: Datos Estructurados</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="code-block">
+// Estructura de datos compleja con arreglos multidimensionales
+let estudiantes = [
+    [
+        ['Juan', 18, 'Matemáticas'],
+        ['María', 17, 'Historia']
+    ],
+    [
+        ['Pedro', 19, 'Física'],
+        ['Ana', 16, 'Química']
+    ]
+];
+
+// Acceder a datos específicos
+console.log(estudiantes[0][0][0]); // 'Juan'
+console.log(estudiantes[1][1][2]); // 'Química'
+
+// Mostrar todos los estudiantes
+for (let grupo = 0; grupo < estudiantes.length; grupo++) {
+    for (let estudiante = 0; estudiante < estudiantes[grupo].length; estudiante++) {
+        console.log(estudiantes[grupo][estudiante].join(', '));
+    }
+}
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="ejecutarEjemplo6()">Ejecutar Ejemplo</button>
+                            <div class="result-box mt-3" id="resultado6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explicaciones Detalladas -->
+        <div id="explicaciones" class="example-section">
+            <h2 class="mb-4">Explicaciones Paso a Paso</h2>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Explicación: Arreglos Unidimensionales</h5>
+                </div>
+                <div class="card-body">
+                    <div class="step-explanation">
+                        <h6>Paso 1: Creación</h6>
+                        <p>Los arreglos unidimensionales se crean usando corchetes []. Cada elemento se separa por comas.</p>
+                        <div class="code-block">let miArreglo = [elemento1, elemento2, elemento3];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 2: Acceso a Elementos</h6>
+                        <p>Los elementos se acceden mediante su índice, comenzando desde 0.</p>
+                        <div class="code-block">let primerElemento = miArreglo[0];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 3: Modificación</h6>
+                        <p>Los elementos pueden modificarse asignando un nuevo valor a su posición.</p>
+                        <div class="code-block">miArreglo[1] = nuevoValor;</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 4: Métodos Útiles</h6>
+                        <p>JavaScript proporciona métodos como push(), pop(), length, etc., para manipular arreglos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Explicación: Arreglos Bidimensionales</h5>
+                </div>
+                <div class="card-body">
+                    <div class="step-explanation">
+                        <h6>Paso 1: Creación</h6>
+                        <p>Los arreglos bidimensionales son arreglos que contienen otros arreglos.</p>
+                        <div class="code-block">let matriz = [[fila1], [fila2], [fila3]];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 2: Acceso a Elementos</h6>
+                        <p>Se necesitan dos índices: el primero para la fila y el segundo para la columna.</p>
+                        <div class="code-block">let elemento = matriz[fila][columna];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 3: Recorrido</h6>
+                        <p>Se utilizan bucles anidados: uno para las filas y otro para las columnas.</p>
+                        <div class="code-block">
+for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+        // Acceder a matriz[i][j]
+    }
+}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Explicación: Arreglos Multidimensionales</h5>
+                </div>
+                <div class="card-body">
+                    <div class="step-explanation">
+                        <h6>Paso 1: Concepto</h6>
+                        <p>Los arreglos multidimensionales extienden el concepto a más de dos dimensiones, útil para datos complejos.</p>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 2: Creación</h6>
+                        <p>Se crean anidando arreglos dentro de otros arreglos.</p>
+                        <div class="code-block">let cubo = [[[capa1]], [[capa2]]];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 3: Acceso</h6>
+                        <p>Se necesitan tantos índices como dimensiones tenga el arreglo.</p>
+                        <div class="code-block">let valor = cubo[x][y][z];</div>
+                    </div>
+                    
+                    <div class="step-explanation">
+                        <h6>Paso 4: Aplicaciones</h6>
+                        <p>Se utilizan en gráficos 3D, análisis de datos complejos, simulaciones, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript para la interactividad -->
+    <script>
+        // Función auxiliar para mostrar resultados
+        function mostrarResultado(elementoId, contenido) {
+            document.getElementById(elementoId).innerHTML = contenido;
+        }
+        
+        // Ejemplos para arreglos unidimensionales
+        function ejecutarEjemplo1() {
+            let resultado = "";
+            
+            // Crear un arreglo de números
+            let numeros = [10, 20, 30, 40, 50];
+            resultado += "Arreglo inicial: " + JSON.stringify(numeros) + "<br>";
+            
+            // Acceder a elementos por índice
+            resultado += "Elemento en índice 0: " + numeros[0] + "<br>";
+            resultado += "Elemento en índice 2: " + numeros[2] + "<br>";
+            
+            // Modificar un elemento
+            numeros[1] = 25;
+            resultado += "Arreglo después de modificar índice 1: " + JSON.stringify(numeros) + "<br>";
+            
+            mostrarResultado("resultado1", resultado);
+        }
+        
+        function ejecutarEjemplo2() {
+            let resultado = "";
+            
+            // Métodos de arreglos unidimensionales
+            let frutas = ['manzana', 'banana', 'naranja'];
+            resultado += "Arreglo inicial: " + JSON.stringify(frutas) + "<br>";
+            
+            // Agregar elemento al final
+            frutas.push('uva');
+            resultado += "Después de push('uva'): " + JSON.stringify(frutas) + "<br>";
+            
+            // Eliminar último elemento
+            frutas.pop();
+            resultado += "Después de pop(): " + JSON.stringify(frutas) + "<br>";
+            
+            // Obtener longitud del arreglo
+            resultado += "Longitud del arreglo: " + frutas.length + "<br>";
+            
+            // Recorrer arreglo
+            resultado += "Elementos del arreglo:<br>";
+            for (let i = 0; i < frutas.length; i++) {
+                resultado += "- " + frutas[i] + "<br>";
+            }
+            
+            mostrarResultado("resultado2", resultado);
+        }
+        
+        function crearArregloPersonalizado() {
+            let input = document.getElementById("arregloInput").value;
+            let elementos = input.split(",").map(item => item.trim());
+            
+            let resultado = "Arreglo creado: " + JSON.stringify(elementos) + "<br>";
+            resultado += "Longitud: " + elementos.length + "<br>";
+            resultado += "Elementos:<br>";
+            
+            for (let i = 0; i < elementos.length; i++) {
+                resultado += `[${i}]: ${elementos[i]}<br>`;
+            }
+            
+            mostrarResultado("resultadoPersonalizado", resultado);
+        }
+        
+        // Ejemplos para arreglos bidimensionales
+        function ejecutarEjemplo3() {
+            let resultado = "";
+            
+            // Crear un arreglo bidimensional (matriz)
+            let matriz = [
+                [1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]
+            ];
+            
+            resultado += "Matriz inicial:<br>";
+            for (let i = 0; i < matriz.length; i++) {
+                resultado += JSON.stringify(matriz[i]) + "<br>";
+            }
+            
+            // Acceder a elementos
+            resultado += "Elemento en [0][0]: " + matriz[0][0] + "<br>";
+            resultado += "Elemento en [1][2]: " + matriz[1][2] + "<br>";
+            
+            // Modificar un elemento
+            matriz[2][1] = 10;
+            resultado += "Después de modificar [2][1]:<br>";
+            for (let i = 0; i < matriz.length; i++) {
+                resultado += JSON.stringify(matriz[i]) + "<br>";
+            }
+            
+            mostrarResultado("resultado3", resultado);
+        }
+        
+        function ejecutarEjemplo4() {
+            let resultado = "";
+            
+            // Recorrer una matriz bidimensional
+            let tabla = [
+                ['A', 'B', 'C'],
+                ['D', 'E', 'F'],
+                ['G', 'H', 'I']
+            ];
+            
+            resultado += "Matriz:<br>";
+            for (let i = 0; i < tabla.length; i++) {
+                resultado += JSON.stringify(tabla[i]) + "<br>";
+            }
+            
+            resultado += "<br>Recorrido elemento por elemento:<br>";
+            // Recorrer filas y columnas
+            for (let fila = 0; fila < tabla.length; fila++) {
+                for (let col = 0; col < tabla[fila].length; col++) {
+                    resultado += `Elemento en [${fila}][${col}]: ${tabla[fila][col]}<br>`;
+                }
+            }
+            
+            mostrarResultado("resultado4", resultado);
+        }
+        
+        function crearMatrizPersonalizada() {
+            let filas = parseInt(document.getElementById("filasInput").value);
+            let columnas = parseInt(document.getElementById("columnasInput").value);
+            
+            let matriz = [];
+            let resultado = "";
+            
+            // Crear matriz con valores incrementales
+            let contador = 1;
+            for (let i = 0; i < filas; i++) {
+                let fila = [];
+                for (let j = 0; j < columnas; j++) {
+                    fila.push(contador++);
+                }
+                matriz.push(fila);
+            }
+            
+            resultado += `Matriz ${filas}x${columnas} creada:<br>`;
+            for (let i = 0; i < matriz.length; i++) {
+                resultado += JSON.stringify(matriz[i]) + "<br>";
+            }
+            
+            mostrarResultado("resultadoMatrizPersonalizada", resultado);
+        }
+        
+        // Ejemplos para arreglos multidimensionales
+        function ejecutarEjemplo5() {
+            let resultado = "";
+            
+            // Crear un arreglo tridimensional
+            let cubo = [
+                [
+                    [1, 2],
+                    [3, 4]
+                ],
+                [
+                    [5, 6],
+                    [7, 8]
+                ]
+            ];
+            
+            resultado += "Arreglo tridimensional:<br>";
+            resultado += JSON.stringify(cubo, null, 2) + "<br><br>";
+            
+            // Acceder a elementos
+            resultado += "Elemento en [0][0][0]: " + cubo[0][0][0] + "<br>";
+            resultado += "Elemento en [1][1][1]: " + cubo[1][1][1] + "<br>";
+            
+            // Modificar un elemento
+            cubo[0][1][0] = 9;
+            resultado += "Después de modificar [0][1][0]:<br>";
+            resultado += JSON.stringify(cubo, null, 2) + "<br>";
+            
+            mostrarResultado("resultado5", resultado);
+        }
+        
+        function ejecutarEjemplo6() {
+            let resultado = "";
+            
+            // Estructura de datos compleja con arreglos multidimensionales
+            let estudiantes = [
+                [
+                    ['Juan', 18, 'Matemáticas'],
+                    ['María', 17, 'Historia']
+                ],
+                [
+                    ['Pedro', 19, 'Física'],
+                    ['Ana', 16, 'Química']
+                ]
+            ];
+            
+            resultado += "Datos de estudiantes:<br>";
+            
+            // Mostrar todos los estudiantes
+            for (let grupo = 0; grupo < estudiantes.length; grupo++) {
+                resultado += `<br>Grupo ${grupo + 1}:<br>`;
+                for (let estudiante = 0; estudiante < estudiantes[grupo].length; estudiante++) {
+                    resultado += "- " + estudiantes[grupo][estudiante].join(', ') + "<br>";
+                }
+            }
+            
+            mostrarResultado("resultado6", resultado);
+        }
+    </script>
+</body>
+</html>

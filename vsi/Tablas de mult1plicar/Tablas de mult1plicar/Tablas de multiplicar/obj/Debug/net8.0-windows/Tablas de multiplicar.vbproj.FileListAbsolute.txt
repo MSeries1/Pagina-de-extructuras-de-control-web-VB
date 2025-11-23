@@ -1,0 +1,32 @@
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.exe
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.deps.json
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.runtimeconfig.json
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.dll
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.pdb
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas_de_multiplicar.Form1.resources
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.vbproj.GenerateResource.cache
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.AssemblyInfoInputs.cache
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.AssemblyInfo.vb
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.vbproj.CoreCompileInputs.cache
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.dll
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\refint\Tablas de multiplicar.dll
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.pdb
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.genruntimeconfig.cache
+C:\Users\tadeo\OneDrive\Desktop\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\ref\Tablas de multiplicar.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.exe
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.deps.json
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.runtimeconfig.json
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\bin\Debug\net8.0-windows\Tablas de multiplicar.pdb
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas_de_multiplicar.Form1.resources
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.vbproj.GenerateResource.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.AssemblyInfoInputs.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.AssemblyInfo.vb
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.vbproj.CoreCompileInputs.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\refint\Tablas de multiplicar.dll
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.pdb
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\Tablas de multiplicar.genruntimeconfig.cache
+C:\Users\blade\Videos\Proyecto v2\vsi\Tablas de mult1plicar\Tablas de mult1plicar\Tablas de multiplicar\obj\Debug\net8.0-windows\ref\Tablas de multiplicar.dll
