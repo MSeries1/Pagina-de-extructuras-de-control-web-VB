@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="arrays">
+    <meta name="keywords" content="arrays">
+    <meta name="author" content="JMS DEV">
+    <!--title-->
+    <title>Arrays</title>
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/exam.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <!-- Bootstrap 5.3.8 JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/exam.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Arreglos</a>
+            <span class="navbar-text ms-auto">
+                <span class="badge badge-progress bg-light text-dark" id="progressIndicator">Paso 1 de 12</span>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 8%"></div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div id="intro" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Introducción a los Arreglos</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead">¡Bienvenido al curso interactivo de arreglos! Aprenderás de forma fácil y práctica
+                        cómo funcionan los arreglos en programación.</p>
+
+                    <div class="visualization">
+                        <h5 class="mb-3">¿Qué es un arreglo?</h5>
+                        <div class="explanation">
+                            <p>Imagina que tienes una fila de cajas donde puedes guardar cosas. Cada caja tiene un
+                                número que la identifica (empezando desde 0). Eso es básicamente un arreglo.</p>
+                            <p>En programación, un <strong>arreglo</strong> es una estructura que nos permite almacenar
+                                múltiples valores en una sola variable, organizados en orden.</p>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            <div>
+                                <div class="array-index">Caja 0</div>
+                                <div class="array-index">Caja 1</div>
+                                <div class="array-index">Caja 2</div>
+                                <div class="array-index">Caja 3</div>
+                            </div>
+                            <div>
+                                <div class="array-element">10</div>
+                                <div class="array-element">20</div>
+                                <div class="array-element">30</div>
+                                <div class="array-element">40</div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted">Cada valor tiene una posición específica llamada <strong>índice</strong>,
+                            que comienza desde 0, no desde 1.</p>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <div></div>
+                        <button class="btn btn-primary" onclick="showSection('explicacionesUni')">Comenzar ➜</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explicaciones Unidimensionales Section -->
+        <div id="explicacionesUni" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Arreglos Unidimensionales: Explicación</h2>
+                </div>
+                <div class="card-body">
+                    <div class="step-explanation">
+                        <h5>Paso 1: Creación</h5>
+                        <p>Los arreglos unidimensionales se crean usando corchetes []. Cada elemento se separa por
+                            comas.</p>
+                        <div class="code-block">let miArreglo = [elemento1, elemento2, elemento3];</div>
+                    </div>
+
+                    <div class="step-explanation">
+                        <h5>Paso 2: Acceso a Elementos</h5>
+                        <p>Los elementos se acceden mediante su índice, comenzando desde 0.</p>
+                        <div class="code-block">let primerElemento = miArreglo[0];</div>
+                    </div>
+
+                    <div class="step-explanation">
+                        <h5>Paso 3: Modificación</h5>
+                        <p>Los elementos pueden modificarse asignando un nuevo valor a su posición.</p>
+                        <div class="code-block">miArreglo[1] = nuevoValor;</div>
+                    </div>
+
+                    <div class="step-explanation">
+                        <h5>Paso 4: Métodos Útiles</h5>
+                        <p>JavaScript proporciona métodos como push(), pop(), length, etc., para manipular arreglos.</p>
+                        <div class="code-block">
+                            // Añadir elemento al final
+                            miArreglo.push(nuevoElemento);
+
+                            // Eliminar último elemento
+                            miArreglo.pop();
+
+                            // Obtener longitud
+                            let longitud = miArreglo.length;
+                        </div>
+                    </div>
+
+                    <div class="concept-visual">
+                        <div class="text-center">
+                            <div class="array-index">0</div>
+                            <div class="array-index">1</div>
+                            <div class="array-index">2</div>
+                            <div class="array-index">3</div>
+                            <div>
+                                <div class="array-element">10</div>
+                                <div class="array-element">20</div>
+                                <div class="array-element">30</div>
+                                <div class="array-element">40</div>
+                            </div>
+                        </div>
+                        <div class="concept-text">
+                            <p><strong>Visualización:</strong> Un arreglo unidimensional es como una fila de cajas. Cada
+                                caja tiene un índice único que comienza desde 0.</p>
+                            <p>Para acceder a un valor, usas el índice de su posición: <code>arreglo[índice]</code></p>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-secondary" onclick="showSection('intro')">← Anterior</button>
+                        <button class="btn btn-primary" onclick="showSection('unidimensional')">Practicar con Código
+                            ➜</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unidimensional Arrays Section -->
+        <div id="unidimensional" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Práctica: Arreglos Unidimensionales</h2>
+                </div>
+                <div class="card-body">
+                    <div class="explanation">
+                        <p>Ahora es tu turno de practicar. Modifica el código a continuación y observa los resultados.
+                        </p>
+                    </div>
+
+                    <h5 class="mt-4">Prueba este código:</h5>
+                    <div class="code-editor" contenteditable="true" id="codeUni">
+                        // Crea un arreglo de frutas
+                        let frutas = ["Manzana", "Pera", "Banana"];
+
+                        // Accede al primer elemento (posición 0)
+                        console.log(frutas[0]);
+
+                        // Modifica el segundo elemento
+                        frutas[1] = "Uva";
+                        console.log("Después del cambio:", frutas);
+
+                        // Añade un nuevo elemento al final
+                        frutas.push("Naranja");
+                        console.log("Después de añadir:", frutas);
+                    </div>
+
+                    <div class="hint">
+                        <strong>Tip:</strong> En programación, siempre empezamos a contar desde 0. El primer elemento
+                        está en la posición 0, el segundo en la 1, etc.
+                    </div>
+
+                    <button class="btn btn-outline-primary mb-3"
+                        onclick="ejecutarCodigo('codeUni', 'consoleUni')">Ejecutar código</button>
+                    <button class="btn btn-outline-secondary mb-3"
+                        onclick="restablecerCodigo('codeUni', uniDefaultCode)">Restablecer código</button>
+
+                    <h5>Consola de resultados:</h5>
+                    <div class="console" id="consoleUni"></div>
+
+                    <div class="nav-buttons">
+                        <button class="btn btn-outline-secondary" onclick="showSection('explicacionesUni')">←
+                            Anterior</button>
+                        <button class="btn btn-primary" onclick="showSection('quiz1')">Continuar ➜</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz 1 Section -->
+        <div id="quiz1" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Pregunta 1: Índices de Arreglos</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Si tenemos un arreglo: <code>let colores = ["rojo", "verde", "azul"];</code></p>
+                    <p class="mb-4">¿Cómo accedemos al color "verde"?</p>
+
+                    <div class="option-card" onclick="checkAnswer(this, 0, 'explicacionesBid')">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3 fw-bold">A</div>
+                            <div>colores[1]</div>
+                        </div>
+                    </div>
+
+                    <div class="option-card" onclick="checkAnswer(this, 1)">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3 fw-bold">B</div>
+                            <div>colores[2]</div>
+                        </div>
+                    </div>
+
+                    <div class="option-card" onclick="checkAnswer(this, 1)">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3 fw-bold">C</div>
+                            <div>colores[0]</div>
+                        </div>
+                    </div>
+
+                    <div class="feedback mt-3" id="feedback1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explicaciones Bidimensionales Section -->
+        <div id="explicacionesBid" class="section">
+            <div class="section-card">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">Arreglos Bidimensionales: Explicación</h2>
+                </div>
+                <div class="card-body">
+                    <div class="step-explanation">
+                        <h5>Paso 1: Creación</h5>
+                        <p>Los arreglos bidimensionales son arreglos que contienen otros arreglos.</p>
+                        <div class="code-block">let matriz = [[fila1], [fila2], [fila3]];</div>
+                    </div>
+
+                    <div class="step-explanation">
+                        <h5>Paso 2: Acceso a Elementos</h5>
+                        <p>Se necesitan dos índices: el primero para la fila y el segundo para la columna.</p>
+                        <div class="code-block">let elemento = matriz[fila][columna];</div>
+                    </div>
+
+                    <div class="step-explanation">
+                        <h5>Paso 3: Recorrido</h5>
+                        <p>Se utilizan bucles anidados: uno para las filas y otro para las columnas.</p>
+                        <div class="code-block">
+                            for (let i = 0; i < matriz.length; i++) { for (let j=0; j < matriz[i].length; j++) { //
+                                Acceder a matriz[i][j] } } </div>
+                        </div>
+
+                        <div class="concept-visual">
+                            <div class="text-center">
+                                <div class="matrix-row">
+                                    <div class="matrix-cell" title="Fila 0, Columna 0">8</div>
+                                    <div class="matrix-cell" title="Fila 0, Columna 1">9</div>
+                                    <div class="matrix-cell" title="Fila 0, Columna 2">7</div>
+                                </div>
+                                <div class="matrix-row">
+                                    <div class="matrix-cell" title="Fila 1, Columna 0">10</div>
+                                    <div class="matrix-cell" title="Fila 1, Columna 1">6</div>
+                                    <div class="matrix-cell" title="Fila 1, Columna 2">9</div>
+                                </div>
+                            </div>
+                            <div class="concept-text">
+                                <p><strong>Visualización:</strong> Un arreglo bidimensional es como una tabla con filas
+                                    y columnas.</p>
+                                <p>Para acceder a un valor, necesitas dos índices: <code>matriz[fila][columna]</code>
+                                </p>
+                                <p>Por ejemplo, para acceder al valor 6 en la tabla, usarías <code>matriz[1][1]</code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <button class="btn btn-outline-secondary" onclick="showSection('quiz1')">← Anterior</button>
+                            <button class="btn btn-primary" onclick="showSection('bidimensional')">Practicar con Código
+                                ➜</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bidimensional Arrays Section -->
+            <div id="bidimensional" class="section">
+                <div class="section-card">
+                    <div class="card-header">
+                        <h2 class="h4 mb-0">Práctica: Arreglos Bidimensionales</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="explanation">
+                            <p>Ahora practica con arreglos bidimensionales. Modifica el código y observa cómo funciona.
+                            </p>
+                        </div>
+
+                        <h5 class="mt-4">Prueba este código:</h5>
+                        <div class="code-editor" contenteditable="true" id="codeBid">
+                            // Crear una matriz bidimensional (tabla 2x3)
+                            let matriz = [
+                            [8, 9, 7],
+                            [10, 6, 9]
+                            ];
+
+                            // Acceder al elemento en la fila 1, columna 2
+                            console.log("Elemento en [1][2]:", matriz[1][2]);
+
+                            // Modificar un elemento
+                            matriz[0][1] = 15;
+                            console.log("Después de modificar [0][1]:", matriz);
+
+                            // Recorrer toda la matriz
+                            console.log("Recorriendo la matriz:");
+                            for (let fila = 0; fila < matriz.length; fila++) { for (let col=0; col <
+                                matriz[fila].length; col++) { console.log(`[${fila}][${col}]=${matriz[fila][col]}`); } }
+                                </div>
+
+                                <div class="hint">
+                                    <strong>Tip:</strong> En matrices bidimensionales, el primer índice siempre es la
+                                    fila y el segundo la columna. Piensa en coordenadas (x,y) como en un plano
+                                    cartesiano.
+                                </div>
+
+                                <button class="btn btn-outline-primary mb-3"
+                                    onclick="ejecutarCodigo('codeBid', 'consoleBid')">Ejecutar código</button>
+                                <button class="btn btn-outline-secondary mb-3"
+                                    onclick="restablecerCodigo('codeBid', bidDefaultCode)">Restablecer código</button>
+
+                                <h5>Consola de resultados:</h5>
+                                <div class="console" id="consoleBid"></div>
+
+                                <div class="nav-buttons">
+                                    <button class="btn btn-outline-secondary"
+                                        onclick="showSection('explicacionesBid')">← Anterior</button>
+                                    <button class="btn btn-primary" onclick="showSection('quiz2')">Continuar ➜</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz 2 Section -->
+                <div id="quiz2" class="section">
+                    <div class="section-card">
+                        <div class="card-header">
+                            <h2 class="h4 mb-0">Pregunta 2: Acceso a Matrices</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead">Para la matriz: <code>let tabla = [["a", "b"], ["c", "d"]];</code></p>
+                            <p class="mb-4">¿Cómo accedemos al elemento "c"?</p>
+
+                            <div class="option-card" onclick="checkAnswer(this, 0, 'explicacionesTri')">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 fw-bold">A</div>
+                                    <div>tabla[1][0]</div>
+                                </div>
+                            </div>
+
+                            <div class="option-card" onclick="checkAnswer(this, 1)">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 fw-bold">B</div>
+                                    <div>tabla[0][1]</div>
+                                </div>
+                            </div>
+
+                            <div class="option-card" onclick="checkAnswer(this, 1)">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3 fw-bold">C</div>
+                                    <div>tabla[1][1]</div>
+                                </div>
+                            </div>
+
+                            <div class="feedback mt-3" id="feedback2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explicaciones Tridimensionales Section -->
+                <div id="explicacionesTri" class="section">
+                    <div class="section-card">
+                        <div class="card-header">
+                            <h2 class="h4 mb-0">Arreglos Tridimensionales: Explicación</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="step-explanation">
+                                <h5>Paso 1: Concepto</h5>
+                                <p>Los arreglos multidimensionales extienden el concepto a más de dos dimensiones, útil
+                                    para datos complejos.</p>
+                                <p>Un arreglo tridimensional puede verse como un cubo de datos, donde necesitas tres
+                                    coordenadas para acceder a un elemento específico.</p>
+                            </div>
+
+                            <div class="step-explanation">
+                                <h5>Paso 2: Creación</h5>
+                                <p>Se crean anidando arreglos dentro de otros arreglos.</p>
+                                <div class="code-block">let cubo = [[[capa1]], [[capa2]]];</div>
+                            </div>
+
+                            <div class="step-explanation">
+                                <h5>Paso 3: Acceso</h5>
+                                <p>Se necesitan tantos índices como dimensiones tenga el arreglo.</p>
+                                <div class="code-block">let valor = cubo[x][y][z];</div>
+                            </div>
+
+                            <div class="step-explanation">
+                                <h5>Paso 4: Aplicaciones</h5>
+                                <p>Se utilizan en:</p>
+                                <ul>
+                                    <li>Gráficos 3D y videojuegos</li>
+                                    <li>Análisis de datos complejos</li>
+                                    <li>Simulaciones científicas</li>
+                                    <li>Imágenes médicas (como resonancias magnéticas)</li>
+                                </ul>
+                            </div>
+
+                            <div class="visualization">
+                                <h5 class="mb-3">Representación 3D: Capas apiladas</h5>
+                                <div class="cube-container">
+                                    <div class="cube-layer">
+                                        <div class="layer-label">Capa 0 (Z=0)</div>
+                                        <div class="matrix-row">
+                                            <div class="matrix-cell" title="[0,0,0]">1</div>
+                                            <div class="matrix-cell" title="[0,0,1]">2</div>
+                                        </div>
+                                        <div class="matrix-row">
+                                            <div class="matrix-cell" title="[0,1,0]">3</div>
+                                            <div class="matrix-cell" title="[0,1,1]">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="cube-layer">
+                                        <div class="layer-label">Capa 1 (Z=1)</div>
+                                        <div class="matrix-row">
+                                            <div class="matrix-cell" title="[1,0,0]">5</div>
+                                            <div class="matrix-cell" title="[1,0,1]">6</div>
+                                        </div>
+                                        <div class="matrix-row">
+                                            <div class="matrix-cell" title="[1,1,0]">7</div>
+                                            <div class="matrix-cell" title="[1,1,1]">8</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coordinates">
+                                    <div class="coord-item">Coordenadas: [Z, Y, X]</div>
+                                    <div class="coord-item">Z = Capa (Profundidad)</div>
+                                    <div class="coord-item">Y = Fila</div>
+                                    <div class="coord-item">X = Columna</div>
+                                </div>
+                                <p class="text-muted mt-3">Cada capa es una matriz 2D. El arreglo 3D es una colección de
+                                    estas capas.</p>
+                            </div>
+
+                            <div class="nav-buttons">
+                                <button class="btn btn-outline-secondary" onclick="showSection('quiz2')">←
+                                    Anterior</button>
+                                <button class="btn btn-primary" onclick="showSection('tridimensional')">Practicar con
+                                    Código ➜</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tridimensional Arrays Section -->
+                <div id="tridimensional" class="section">
+                    <div class="section-card">
+                        <div class="card-header">
+                            <h2 class="h4 mb-0">Práctica: Arreglos Tridimensionales</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="explanation">
+                                <p>Ahora practica con arreglos tridimensionales. Experimenta con el código para entender
+                                    cómo funcionan las tres dimensiones.</p>
+                            </div>
+
+                            <h5 class="mt-4">Prueba este código:</h5>
+                            <div class="code-editor" contenteditable="true" id="codeTri">
+                                // Crear un arreglo tridimensional (como un cubo)
+                                let cubo = [
+                                [ // Capa 0 (Z=0)
+                                [1, 2], // Fila 0, Columnas 0 y 1
+                                [3, 4] // Fila 1, Columnas 0 y 1
+                                ],
+                                [ // Capa 1 (Z=1)
+                                [5, 6], // Fila 0, Columnas 0 y 1
+                                [7, 8] // Fila 1, Columnas 0 y 1
+                                ]
+                                ];
+
+                                // Acceder a diferentes elementos
+                                console.log("Elemento en [0,0,0]:", cubo[0][0][0]);
+                                console.log("Elemento en [1,1,1]:", cubo[1][1][1]);
+
+                                // Modificar un elemento
+                                cubo[0][1][0] = 9;
+                                console.log("Después de modificar [0,1,0]:", cubo);
+
+                                // Recorrer todo el cubo
+                                console.log("Recorriendo el cubo:");
+                                for (let z = 0; z < cubo.length; z++) { console.log(`Capa ${z}:`); for (let y=0; y <
+                                    cubo[z].length; y++) { for (let x=0; x < cubo[z][y].length; x++) { console.log(`
+                                    [${z},${y},${x}]=${cubo[z][y][x]}`); } } } </div>
+
+                                    <div class="hint">
+                                        <strong>Tip:</strong> Los arreglos tridimensionales son útiles para representar
+                                        datos en 3D, como coordenadas en el espacio (x,y,z) o datos organizados en
+                                        capas.
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mb-3"
+                                        onclick="ejecutarCodigo('codeTri', 'consoleTri')">Ejecutar código</button>
+                                    <button class="btn btn-outline-secondary mb-3"
+                                        onclick="restablecerCodigo('codeTri', triDefaultCode)">Restablecer
+                                        código</button>
+
+                                    <h5>Consola de resultados:</h5>
+                                    <div class="console" id="consoleTri"></div>
+
+                                    <div class="nav-buttons">
+                                        <button class="btn btn-outline-secondary"
+                                            onclick="showSection('explicacionesTri')">← Anterior</button>
+                                        <button class="btn btn-primary" onclick="showSection('finalExam')">Ir al Examen
+                                            Final ➜</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Exam Section -->
+                    <div id="finalExam" class="section">
+                        <div class="section-card">
+                            <div class="card-header">
+                                <h2 class="h4 mb-0">Examen Final</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="lead">Responde las siguientes 5 preguntas para completar el curso:</p>
+
+                                <div class="mb-4">
+                                    <h5>1. ¿Cuál es el primer índice de un arreglo?</h5>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 0, 1)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">A</div>
+                                            <div>0</div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 1, 1)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">B</div>
+                                            <div>1</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>2. <code>matriz[2][0]</code> se refiere a:</h5>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 0, 2)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">A</div>
+                                            <div>Fila 2, Columna 0</div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 1, 2)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">B</div>
+                                            <div>Fila 0, Columna 2</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>3. ¿Un arreglo de 3D puede tener matrices dentro de matrices?</h5>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 0, 3)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">A</div>
+                                            <div>Sí</div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 1, 3)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">B</div>
+                                            <div>No</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>4. Para el arreglo: <code>let datos = [10, 20, 30];</code> ¿Cómo modificamos el
+                                        segundo elemento a 25?</h5>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 0, 4)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">A</div>
+                                            <div>datos[1] = 25;</div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 1, 4)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">B</div>
+                                            <div>datos[2] = 25;</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>5. ¿Qué representa el primer índice en un arreglo tridimensional?</h5>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 0, 5)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">A</div>
+                                            <div>La primera dimensión (ej. capa o profundidad)</div>
+                                        </div>
+                                    </div>
+                                    <div class="option-card exam-option" onclick="selectAnswer(this, 1, 5)">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-3 fw-bold">B</div>
+                                            <div>La tercera dimensión</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success w-100" style="max-width: 300px;"
+                                    onclick="calificarExamen()">Calificar Examen</button>
+                                <div id="resultadoExamen" class="mt-4 text-center"></div>
+                            </div>
+                            <center><a href="index.html" class="btn btn-purple">
+                                    <i class="fa fa-hard-of-hearing" aria-hidden="true"></i> Volver
+                                </a></center>
+                        </div>
+                    </div>
+                </div>
+
+
+</body>
+
+</html>

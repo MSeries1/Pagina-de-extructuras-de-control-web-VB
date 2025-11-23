@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="index">
+    <meta name="keywords" content="index">
+    <meta name="author" content="JMS DEV">
+    <!--title-->
+    <title>Presentacion :-) </title>
+    <!--links-->
+    <link rel="icon" href="./img/icon.ico">
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!--scripts-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-code-slash me-2"></i>Estructuras de Control
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conceptos">Conceptos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Sentencias de Control y Arreglos</h1>
+                    <p class="lead">
+                        Domina los pilares fundamentales de la programación: bucles, decisiones y estructuras de datos.
+                    </p>
+                    <a href="#conceptos" class="btn btn-custom">
+                        Explorar Conceptos <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="floating-element">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103793.png" alt="Programación"
+                            class="img-fluid" style="max-height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conceptos Section -->
+    <section id="conceptos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Conceptos Fundamentales</h2>
+            <p class="text-center mb-5">Explora las estructuras de control esenciales en programación</p>
+
+            <!-- Pestañas de Navegación -->
+            <ul class="nav nav-tabs justify-content-center mb-4" id="conceptTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="for-tab" data-bs-toggle="tab" data-bs-target="#for"
+                        type="button" role="tab">
+                        <i class="bi bi-arrow-repeat me-2"></i> Bucle For
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="while-tab" data-bs-toggle="tab" data-bs-target="#while" type="button"
+                        role="tab">
+                        <i class="bi bi-infinity me-2"></i> Bucle While
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="switch-tab" data-bs-toggle="tab" data-bs-target="#switch" type="button"
+                        role="tab">
+                        <i class="bi bi-diagram-3 me-2"></i> Estructura Switch
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="tab-content" id="conceptTabsContent">
+                <!-- Pestaña For -->
+                <div class="tab-pane fade show active" id="for" role="tabpanel" aria-labelledby="for-tab">
+                    <div class="concept-section">
+                        <h2 class="section-title">El Concepto de Bucle For</h2>
+
+                        <div class="content-block">
+                            <h3>¿Qué es el Bucle For?</h3>
+                            <p>En programación, un bucle for es una estructura de control que permite ejecutar
+                                repetidamente un bloque de código un número específico de veces. Es especialmente útil
+                                cuando sabemos de antemano cuántas iteraciones necesitamos realizar.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Características Clave:</h3>
+                            <ul>
+                                <li><span class="highlight">Controlado por contador:</span> Utiliza una variable que se
+                                    incrementa o decrementa en cada iteración.</li>
+                                <li><span class="highlight">Estructura definida:</span> Tiene una inicialización, una
+                                    condición de continuación y una expresión de incremento.</li>
+                                <li><span class="highlight">Eficiente para recorridos:</span> Ideal para trabajar con
+                                    arrays y colecciones de elementos.</li>
+                                <li><span class="highlight">Predecible:</span> El número de iteraciones es conocido
+                                    antes de entrar al bucle.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Sintaxis General:</h3>
+                            <div class="code-container">
+                                <pre><code>// Sintaxis en la mayoría de lenguajes
+for (inicialización; condición; incremento) {
+    // Código a ejecutar en cada iteración
+}
+
+// Ejemplo específico
+for (int i = 0; i < 5; i++) { // puede ser ++ que se incremente o -- que se decremente
+    System.out.println("Iteración: " + i);
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Práctica</h3>
+                            <p>código de ejemplo con bucle for en el espacio:</p>
+                            <div class="code-container">
+                                <pre><code>' Generar las 10 operaciones de multiplicación
+For contador As Integer = 1 To 10
+    Dim resultado As Integer = numero * contador
+    tabla.AppendLine($"{numero,4} × {contador,2} = {resultado,6}")
+Next</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña While -->
+                <div class="tab-pane fade" id="while" role="tabpanel" aria-labelledby="while-tab">
+                    <div class="concept-section">
+                        <h2 class="section-title">El Concepto de Bucle While</h2>
+
+                        <div class="content-block">
+                            <h3>¿Qué es el Bucle While?</h3>
+                            <p>El bucle while es una estructura de control que ejecuta repetidamente un bloque de
+                                código mientras una condición específica sea verdadera. A diferencia del bucle for,
+                                no necesitamos saber de antemano cuántas iteraciones se realizarán.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Características Clave:</h3>
+                            <ul>
+                                <li><span class="highlight">Basado en condición:</span> La ejecución continúa
+                                    mientras la condición sea verdadera.</li>
+                                <li><span class="highlight">Evaluación al inicio:</span> La condición se verifica
+                                    antes de cada iteración.</li>
+                                <li><span class="highlight">Flexible:</span> Puede ejecutarse cero o más veces
+                                    dependiendo de la condición inicial.</li>
+                                <li><span class="highlight">Riesgo de bucle infinito:</span> Si la condición nunca
+                                    se vuelve falsa, el bucle se ejecutará indefinidamente.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Sintaxis General:</h3>
+                            <div class="code-container">
+                                <pre><code>// Sintaxis básica
+while (condición) {
+    // Código a ejecutar
+    // Es importante modificar algo que afecte la condición
+}
+
+// Ejemplo específico
+int contador = 0;
+while (contador < 5) {
+    System.out.println("Contador: " + contador);
+    contador++;
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Práctica con Bucle While</h3>
+                            <p>código de ejemplo con bucle while en el siguiente espacio:</p>
+                            <div class="code-container">
+                                <pre><code>Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Dim usuario As String
+    Dim contraseña As String
+    Dim admin As String = "admin"
+    Dim contra As String = "1234"
+    Dim intentos As Integer = 0
+    Dim maxIntentos As Integer = 3
+    Dim acceso As Boolean = False
+
+    Do While intentos < maxIntentos And Not acceso
+        usuario = txt_usuario.Text
+        contraseña = txt_contraseña.Text
+        If usuario = admin AndAlso contraseña = contra Then
+            txt_estatus.Text = "Bienvenido."
+            acceso = True
+        Else
+            intentos = intentos + 1
+            txt_estatus.Text = "Incorrecto"
+        End If
+    Loop
+End Sub</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña Switch -->
+                <div class="tab-pane fade" id="switch" role="tabpanel" aria-labelledby="switch-tab">
+                    <div class="concept-section">
+                        <h2 class="section-title">El Concepto de Estructura Switch</h2>
+
+                        <div class="content-block">
+                            <h3>¿Qué es la Estructura Switch?</h3>
+                            <p>La estructura switch es una sentencia de control que permite ejecutar diferentes
+                                bloques de código basándose en el valor de una expresión. Es una alternativa más
+                                legible y eficiente a usar múltiples sentencias if-else cuando tenemos que
+                                comparar una variable con múltiples valores posibles.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Características Clave:</h3>
+                            <ul>
+                                <li><span class="highlight">Selección múltiple:</span> Permite elegir entre
+                                    varias opciones basadas en un valor.</li>
+                                <li><span class="highlight">Más legible:</span> Mejora la claridad del código
+                                    comparado con if-else anidados.</li>
+                                <li><span class="highlight">Caso por defecto:</span> Puede incluir un caso
+                                    default para manejar valores no especificados.</li>
+                                <li><span class="highlight">Sentencia break:</span> Generalmente se usa break
+                                    para evitar que se ejecuten casos siguientes.</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Sintaxis General:</h3>
+                            <div class="code-container">
+                                <pre><code>// FUNCIÓN CON SWITCH
+function calcular(operacion) {
+    // Obtener los valores
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let resultado;
+
+    // Validar que sean números
+    if (isNaN(num1) || isNaN(num2)) {
+        mostrarResultado(" Por favor ingresa ambos números");
+        return;
+    }
+
+    // ESTRUCTURA SWITCH
+    switch (operacion) {
+        case "+":
+            resultado = num1 + num2;
+            mostrarResultado(`${num1} + ${num2} = ${resultado}`);
+            break;
+
+        case "-":
+            resultado = num1 - num2;
+            mostrarResultado(`${num1} - ${num2} = ${resultado}`);
+            break;
+
+        case "*":
+            resultado = num1 * num2;
+            mostrarResultado(`${num1} × ${num2} = ${resultado}`);
+            break;
+
+        case "/":
+            if (num2 === 0) {
+                mostrarResultado(" No se puede dividir entre cero");
+            } else {
+                resultado = num1 / num2;
+                mostrarResultado(`${num1} ÷ ${num2} = ${resultado.toFixed(2)}`);
+            }
+            break;
+
+        default:
+            mostrarResultado(" Operación no válida");
+    }
+}
+
+function mostrarResultado(texto) {
+    let divResultado = document.getElementById("resultado");
+    divResultado.textContent = texto;
+    divResultado.classList.add("mostrar");
+}</code></pre>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Ejemplos con Switch</h3>
+                            <p>Inserta introduccion switch:</p>
+                            <div class="web-container">
+                                <iframe class="web-frame" id="switch-frame" src="./case.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Adicionales -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Recursos Adicionales</h2>
+            <p class="text-center mb-5">Amplía tus conocimientos con estos recursos seleccionados</p>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom text-center h-100">
+                        <div class="card-body-custom">
+                            <div class="feature-icon">
+                                <i class="bi bi-file-earmark-code"></i>
+                            </div>
+                            <h5>Documentación Oficial Bootstrap 5</h5>
+                            <p>Consulta la documentación oficial de Bootstrap 5 para detalles técnicos.
+                            </p>
+                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                class="btn btn-custom btn-sm">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom text-center h-100">
+                        <div class="card-body-custom">
+                            <div class="feature-icon">
+                                <i class="bi bi-collection-play"></i>
+                            </div>
+                            <h5>Github</h5>
+                            <p>Encuentra el code fuente en Github.</p>
+                            <a href="https://github.com/MSeries1/Pagina-de-extructuras-de-control-web-VB"
+                                class="btn btn-custom btn-sm">Ver Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom text-center h-100">
+                        <div class="card-body-custom">
+                            <div class="feature-icon">
+                                <i class="bi bi-puzzle"></i>
+                            </div>
+                            <h5>Ejercicios Prácticos Arrays</h5>
+                            <p>Pon a prueba tus conocimientos con ejercicios prácticos </p>
+                            <a href="./exam.html" class="btn btn-custom btn-sm">Practicar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="text-center">
+            <p>&copy; 2025 JMS DEV. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="calculadora">
+    <meta name="keywords" content="calculadora">
+    <meta name="author" content="Jocy DEV">
+    <!--title-->
+    <title>Calculadora</title>
+    <!--links-->
+    <link rel="icon" href="./img/icon.ico">
+    <link rel="stylesheet" href="./css/calculadora.css">
+    <!--scripts-->
+    <script src="./js/calculadora.js"></script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2> Calculadora Simple</h2>
+
+        <input type="number" id="num1" placeholder="Primer número">
+        <input type="number" id="num2" placeholder="Segundo número">
+
+        <div class="botones">
+            <button onclick="calcular('+')">+</button>
+            <button onclick="calcular('-')">-</button>
+            <button onclick="calcular('*')">×</button>
+            <button onclick="calcular('/')">/</button>
+        </div>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+</body>
+
+</html>
